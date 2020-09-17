@@ -1,0 +1,97 @@
+﻿body {
+}
+.pageBackground {
+    text-align: center;
+    font-size: large;
+    font-family: Arial;
+    font-weight: bold;    
+}
+
+label {
+    display: inline-block;
+    width: 100em;
+    text-align: right;
+}
+
+input {
+    width: 28px;
+    text-align: right;
+    float: right;
+}
+
+.tb1 {
+    text-align: center;
+    margin-top: 67em;
+    display: inline-block;
+}
+
+.textBoxes2 {
+    text-align: center;
+    margin-top: 47px;
+}
+
+.textBoxes3 {
+    text-align: center;
+    margin-top: 46px;
+}
+
+.textBoxes4 {
+    text-align: center;
+    margin-top: 49px;
+}
+
+.textBoxes5 {
+    text-align: center;
+    margin-top: 48px;
+}
+
+.textBoxes6 {
+    text-align: center;
+    margin-top: 45px;
+}
+
+.textBoxes7 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.textBoxes8 {
+    text-align: center;
+    margin-top: 59px;
+}
+
+.textBoxes9 {
+    text-align: center;
+    margin-top: 49px;
+}
+
+.textBoxes10 {
+    text-align: center;
+    margin-top: 49px;
+}
+
+.submit {
+    margin-top: 6px;
+}
+
+.total {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.timerAside {
+    float: right;
+    width: 49%;
+    text-align: center;
+    font-size: large;
+    font-family: Arial;
+    font-weight: bold;
+    background-color: salmon;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 40px;
+    height: 890px;
+    margin-left: 10px;
+}
+
+

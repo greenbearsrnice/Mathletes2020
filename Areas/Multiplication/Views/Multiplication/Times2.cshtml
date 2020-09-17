@@ -1,0 +1,158 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+@model Mathletes2020.Areas.Multiplication.Models.Times2Responses
+
+<hr />
+<h2 class="heading-primary text-center">2s Multiplication Tables</h2>
+
+@{
+    var answers = ViewData["answers"] as Mathletes2020.Areas.Multiplication.Models.Answers;
+    //var responses = ViewData["responses"] as Mathletes2020.Areas.Multiplication.Models.Times2Responses;
+}
+
+@*<h3> Ans1: @answers.Ans1</h3>
+    <h3> Ans2: @answers.Ans2</h3>*@
+
+<div style="background-color:lightgray">
+    <form asp-controller="Times2" method="post" asp-antiforgery="true">
+        <div class="row justify-content-center">
+            <label>7<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb1)</label>
+            <label>5<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb2)</label>
+            <label>12<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb3)</label>
+            <label>2<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb4)</label>
+            <label>11<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb5)</label>
+            <label>6<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb6)</label>
+            <label>10<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb7)</label>
+            <label>1<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb8)</label>
+            <label>3<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb9)</label>
+            <label>8<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb10)</label>
+        </div><br />
+
+        <div class="row justify-content-center">
+            <label>9<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb11)</label>
+            <label>4<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb12)</label>
+            <label>7<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb13)</label>
+            <label>3<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb14)</label>
+            <label>11<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb15)</label>
+            <label>2<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb16)</label>
+            <label>10<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb17)</label>
+            <label>8<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb18)</label>
+            <label>1<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb19)</label>
+            <label>5<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb20)</label>
+        </div><br />
+
+        <div class="row justify-content-center">
+            <label>12<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb21)</label>
+            <label>4<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb22)</label>
+            <label>9<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb23)</label>
+            <label>6<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb24)</label>
+            <label>3<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb25)</label>
+            <label>8<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb26)</label>
+            <label>6<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb27)</label>
+            <label>2<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb28)</label>
+            <label>11<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb29)</label>
+            <label>7<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb30)</label>
+        </div><br />
+
+        <div class="row justify-content-center">
+            <label>9<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb31)</label>
+            <label>4<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb32)</label>
+            <label>1<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb33)</label>
+            <label>12<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb34)</label>
+            <label>5<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb35)</label>
+            <label>10<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb36)</label>
+            <label>1<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb37)</label>
+            <label>4<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb38)</label>
+            <label>7<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb39)</label>
+            <label>3<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb40)</label>
+        </div><br />
+
+        <div class="row justify-content-center">
+            <label>10<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb41)</label>
+            <label>2<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb42)</label>
+            <label>11<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb43)</label>
+            <label>5<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb44)</label>
+            <label>9<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb45)</label>
+            <label>6<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb46)</label>
+            <label>12<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb47)</label>
+            <label>8<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb48)</label>
+            <label>5<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb49)</label>
+            <label>9<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb50)</label>
+        </div><br />
+
+        <div class="row justify-content-center">
+            <label>4<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb51)</label>
+            <label>12<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb52)</label>
+            <label>3<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb53)</label>
+            <label>8<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb54)</label>
+            <label>2<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb55)</label>
+            <label>7<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb56)</label>
+            <label>6<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb57)</label>
+            <label>11<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb58)</label>
+            <label>10<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb59)</label>
+            <label>1<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb60)</label>
+        </div><br />
+
+        <div class="row justify-content-center">
+            <label>3<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb61)</label>
+            <label>1<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb62)</label>
+            <label>9<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb63)</label>
+            <label>10<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb64)</label>
+            <label>2<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb65)</label>
+            <label>8<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb66)</label>
+            <label>4<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb67)</label>
+            <label>12<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb68)</label>
+            <label>5<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb69)</label>
+            <label>7<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb70)</label>
+        </div><br />
+
+        <div class="row justify-content-center">
+            <label>11<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb71)</label>
+            <label>6<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb72)</label>
+            <label>3<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb73)</label>
+            <label>12<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb74)</label>
+            <label>4<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb75)</label>
+            <label>11<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb76)</label>
+            <label>5<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb77)</label>
+            <label>1<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb78)</label>
+            <label>10<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb79)</label>
+            <label>2<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb80)</label>
+        </div><br />
+
+        <div class="row justify-content-center">
+            <label>9<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb81)</label>
+            <label>8<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb82)</label>
+            <label>6<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb83)</label>
+            <label>7<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb84)</label>
+            <label>1<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb85)</label>
+            <label>6<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb86)</label>
+            <label>5<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb87)</label>
+            <label>10<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb88)</label>
+            <label>3<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb89)</label>
+            <label>2<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb90)</label>
+        </div><br />
+
+        <div class="row justify-content-center">
+            <label>11<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb91)</label>
+            <label>4<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb92)</label>
+            <label>12<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb93)</label>
+            <label>7<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb94)</label>
+            <label>8<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb95)</label>
+            <label>9<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb96)</label>
+            <label>10<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb97)</label>
+            <label>9<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb98)</label>
+            <label>8<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb99)</label>
+            <label>7<br /><u>x 2</u><br />@Html.TextBoxFor(responses => responses.Tb100)</label>
+        </div><br />
+
+        <div class="justify-content-sm-center">
+            <input type="submit" value="Submit" />
+        </div>
+    </form>
+</div>
+
+
+
