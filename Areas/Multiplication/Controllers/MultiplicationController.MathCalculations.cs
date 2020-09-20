@@ -20,7 +20,7 @@ namespace Mathletes2020.Areas.Multiplication.Controllers
         //{
         //    _answers = answers;
         //}
-        public ActionResult MathCalculations(Times2Responses responses)
+        public ActionResult MathCalculations(Responses responses)
         {
             
             return View(responses);

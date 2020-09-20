@@ -11,6 +11,7 @@ namespace Mathletes2020.Areas.Multiplication.Models
     public partial class Answers
     {
         [Key]
+        public int TestLevel { get; set; }
         public int Ans1 { get; set; }
         public int Ans2 { get; set; }
         public int Ans3 { get; set; }
