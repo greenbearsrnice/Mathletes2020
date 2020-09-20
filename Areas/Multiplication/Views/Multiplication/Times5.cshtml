@@ -4,142 +4,164 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+@model Mathletes2020.Areas.Multiplication.Models.Responses
+
 
 <hr />
-<h2 class="heading-primary" style="text-align:center">5s Multiplication Tables</h2>
+<h2 class="heading-primary text-center">5s Multiplication Tables</h2>
+<form asp-controller="Times2" method="post" asp-antiforgery="true">
+    <div style="background-color:lightgray" class="font-weight-bold">
+        <div class="row">
+            <div class="mx-auto">
+                <label>&emsp;&nbsp;&nbsp;&nbsp;7<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb1, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;5<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb2, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;12<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb3, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;2<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb4, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;11<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb5, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;6<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb6, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;10<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb7, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;1<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb8, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;3<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb9, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;8<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb10, new { style = "width: 40px;", autocomplete = "off" })</label>
+            </div>
+        </div>
 
-<div class="pageBackground" style="background-color:blueviolet">
-    <div class="row">
-        <label>&nbsp;&nbsp;&nbsp;7<br /><u>x 5</u><br /><input id="q1" /></label>
-        <label>&nbsp;&nbsp;&nbsp;5<br /><u>x 5</u><br /><input id="q2" /></label>
-        <label>&nbsp;&nbsp;&nbsp;12<br /><u>x 5</u><br /><input id="q3" /></label>
-        <label>&nbsp;&nbsp;&nbsp;2<br /><u>x 5</u><br /><input id="q4" /></label>
-        <label>&nbsp;&nbsp;&nbsp;11<br /><u>x 5</u><br /><input id="q5" /></label>
-        <label>&nbsp;&nbsp;&nbsp;6<br /><u>x 5</u><br /><input id="q6" /></label>
-        <label>&nbsp;&nbsp;&nbsp;10<br /><u>x 5</u><br /><input id="q7" /></label>
-        <label>&nbsp;&nbsp;&nbsp;1<br /><u>x 5</u><br /><input id="q8" /></label>
-        <label>&nbsp;&nbsp;&nbsp;3<br /><u>x 5</u><br /><input id="q9" /></label>
-        <label>&nbsp;&nbsp;&nbsp;8<br /><u>x 5</u><br /><input id="q10" /></label>
-    </div><br />
+        <div class="row">
+            <div class="mx-auto">
+                <label>&emsp;&nbsp;&nbsp;&nbsp;9<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb11, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;4<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb12, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;7<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb13, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;3<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb14, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;11<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb15, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;2<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb16, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;10<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb17, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;8<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb18, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;1<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb19, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;5<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb20, new { style = "width: 40px;", autocomplete = "off" })</label>
+            </div>
+        </div>
 
-    <div class="row">
-        <label>&nbsp;&nbsp;&nbsp;9<br /><u>x 5</u><br /><input id="q11" /></label>
-        <label>&nbsp;&nbsp;&nbsp;4<br /><u>x 5</u><br /><input id="q12" /></label>
-        <label>&nbsp;&nbsp;&nbsp;7<br /><u>x 5</u><br /><input id="q13" /></label>
-        <label>&nbsp;&nbsp;&nbsp;3<br /><u>x 5</u><br /><input id="q14" /></label>
-        <label>&nbsp;&nbsp;&nbsp;11<br /><u>x 5</u><br /><input id="q15" /></label>
-        <label>&nbsp;&nbsp;&nbsp;2<br /><u>x 5</u><br /><input id="q16" /></label>
-        <label>&nbsp;&nbsp;&nbsp;10<br /><u>x 5</u><br /><input id="q17" /></label>
-        <label>&nbsp;&nbsp;&nbsp;8<br /><u>x 5</u><br /><input id="q18" /></label>
-        <label>&nbsp;&nbsp;&nbsp;1<br /><u>x 5</u><br /><input id="q19" /></label>
-        <label>&nbsp;&nbsp;&nbsp;5<br /><u>x 5</u><br /><input id="q20" /></label>
-    </div><br />
+        <div class="row">
+            <div class="mx-auto">
+                <label>&emsp;&nbsp;12<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb21, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;4<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb22, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;9<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb23, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;6<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb24, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;3<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb25, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;8<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb26, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;6<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb27, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;2<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb28, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;11<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb29, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;7<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb30, new { style = "width: 40px;", autocomplete = "off" })</label>
+            </div>
+        </div>
 
-    <div class="row">
-        <label>&nbsp;&nbsp;&nbsp;12<br /><u>x 5</u><br /><input id="q21" /></label>
-        <label>&nbsp;&nbsp;&nbsp;4<br /><u>x 5</u><br /><input id="q22" /></label>
-        <label>&nbsp;&nbsp;&nbsp;9<br /><u>x 5</u><br /><input id="q23" /></label>
-        <label>&nbsp;&nbsp;&nbsp;6<br /><u>x 5</u><br /><input id="q24" /></label>
-        <label>&nbsp;&nbsp;&nbsp;3<br /><u>x 5</u><br /><input id="q25" /></label>
-        <label>&nbsp;&nbsp;&nbsp;8<br /><u>x 5</u><br /><input id="q26" /></label>
-        <label>&nbsp;&nbsp;&nbsp;6<br /><u>x 5</u><br /><input id="q27" /></label>
-        <label>&nbsp;&nbsp;&nbsp;2<br /><u>x 5</u><br /><input id="q28" /></label>
-        <label>&nbsp;&nbsp;&nbsp;11<br /><u>x 5</u><br /><input id="q29" /></label>
-        <label>&nbsp;&nbsp;&nbsp;7<br /><u>x 5</u><br /><input id="q30" /></label>
-    </div><br />
+        <div class="row">
+            <div class="mx-auto">
+                <label>&emsp;&nbsp;&nbsp;&nbsp;9<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb31, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;4<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb32, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;1<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb33, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;12<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb34, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;5<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb35, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;10<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb36, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;1<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb37, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;4<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb38, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;7<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb39, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;3<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb40, new { style = "width: 40px;", autocomplete = "off" })</label>
+            </div>
+        </div>
 
-    <div class="row">
-        <label>&nbsp;&nbsp;&nbsp;9<br /><u>x 5</u><br /><input id="q31" /></label>
-        <label>&nbsp;&nbsp;&nbsp;4<br /><u>x 5</u><br /><input id="q32" /></label>
-        <label>&nbsp;&nbsp;&nbsp;1<br /><u>x 5</u><br /><input id="q33" /></label>
-        <label>&nbsp;&nbsp;&nbsp;12<br /><u>x 5</u><br /><input id="q34" /></label>
-        <label>&nbsp;&nbsp;&nbsp;5<br /><u>x 5</u><br /><input id="q35" /></label>
-        <label>&nbsp;&nbsp;&nbsp;10<br /><u>x 5</u><br /><input id="q36" /></label>
-        <label>&nbsp;&nbsp;&nbsp;1<br /><u>x 5</u><br /><input id="q37" /></label>
-        <label>&nbsp;&nbsp;&nbsp;4<br /><u>x 5</u><br /><input id="q38" /></label>
-        <label>&nbsp;&nbsp;&nbsp;7<br /><u>x 5</u><br /><input id="q39" /></label>
-        <label>&nbsp;&nbsp;&nbsp;3<br /><u>x 5</u><br /><input id="q40" /></label>
-    </div><br />
+        <div class="row">
+            <div class="mx-auto">
+                <label>&emsp;&nbsp;10<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb41, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;2<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb42, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;11<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb43, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;5<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb44, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;9<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb45, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;6<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb46, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;12<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb47, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;8<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb48, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;5<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb49, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;9<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb50, new { style = "width: 40px;", autocomplete = "off" })</label>
+            </div>
+        </div>
 
-    <div class="row">
-        <label>&nbsp;&nbsp;&nbsp;10<br /><u>x 5</u><br /><input id="q41" /></label>
-        <label>&nbsp;&nbsp;&nbsp;2<br /><u>x 5</u><br /><input id="q42" /></label>
-        <label>&nbsp;&nbsp;&nbsp;11<br /><u>x 5</u><br /><input id="q43" /></label>
-        <label>&nbsp;&nbsp;&nbsp;5<br /><u>x 5</u><br /><input id="q44" /></label>
-        <label>&nbsp;&nbsp;&nbsp;9<br /><u>x 5</u><br /><input id="q45" /></label>
-        <label>&nbsp;&nbsp;&nbsp;6<br /><u>x 5</u><br /><input id="q46" /></label>
-        <label>&nbsp;&nbsp;&nbsp;12<br /><u>x 5</u><br /><input id="q47" /></label>
-        <label>&nbsp;&nbsp;&nbsp;8<br /><u>x 5</u><br /><input id="q48" /></label>
-        <label>&nbsp;&nbsp;&nbsp;5<br /><u>x 5</u><br /><input id="q49" /></label>
-        <label>&nbsp;&nbsp;&nbsp;9<br /><u>x 5</u><br /><input id="q50" /></label>
-    </div><br />
+        <div class="row">
+            <div class="mx-auto">
+                <label>&emsp;&nbsp;&nbsp;&nbsp;4<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb51, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;12<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb52, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;3<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb53, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;8<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb54, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;2<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb55, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;7<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb56, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;6<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb57, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;11<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb58, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;10<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb59, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;1<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb60, new { style = "width: 40px;", autocomplete = "off" })</label>
+            </div>
+        </div>
 
-    <div class="row">
-        <label>&nbsp;&nbsp;&nbsp;4<br /><u>x 5</u><br /><input id="q51" /></label>
-        <label>&nbsp;&nbsp;&nbsp;12<br /><u>x 5</u><br /><input id="q52" /></label>
-        <label>&nbsp;&nbsp;&nbsp;3<br /><u>x 5</u><br /><input id="q53" /></label>
-        <label>&nbsp;&nbsp;&nbsp;8<br /><u>x 5</u><br /><input id="q54" /></label>
-        <label>&nbsp;&nbsp;&nbsp;2<br /><u>x 5</u><br /><input id="q55" /></label>
-        <label>&nbsp;&nbsp;&nbsp;7<br /><u>x 5</u><br /><input id="q56" /></label>
-        <label>&nbsp;&nbsp;&nbsp;6<br /><u>x 5</u><br /><input id="q57" /></label>
-        <label>&nbsp;&nbsp;&nbsp;11<br /><u>x 5</u><br /><input id="q58" /></label>
-        <label>&nbsp;&nbsp;&nbsp;10<br /><u>x 5</u><br /><input id="q59" /></label>
-        <label>&nbsp;&nbsp;&nbsp;1<br /><u>x 5</u><br /><input id="q60" /></label>
-    </div><br />
+        <div class="row">
+            <div class="mx-auto">
+                <label>&emsp;&nbsp;&nbsp;&nbsp;3<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb61, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;1<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb62, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;9<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb63, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;10<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb64, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;2<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb65, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;8<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb66, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;4<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb67, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;12<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb68, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;5<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb69, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;7<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb70, new { style = "width: 40px;", autocomplete = "off" })</label>
+            </div>
+        </div>
 
-    <div class="row">
-        <label>&nbsp;&nbsp;&nbsp;3<br /><u>x 5</u><br /><input id="q61" /></label>
-        <label>&nbsp;&nbsp;&nbsp;1<br /><u>x 5</u><br /><input id="q62" /></label>
-        <label>&nbsp;&nbsp;&nbsp;9<br /><u>x 5</u><br /><input id="q63" /></label>
-        <label>&nbsp;&nbsp;&nbsp;10<br /><u>x 5</u><br /><input id="q64" /></label>
-        <label>&nbsp;&nbsp;&nbsp;2<br /><u>x 5</u><br /><input id="q65" /></label>
-        <label>&nbsp;&nbsp;&nbsp;8<br /><u>x 5</u><br /><input id="q66" /></label>
-        <label>&nbsp;&nbsp;&nbsp;4<br /><u>x 5</u><br /><input id="q67" /></label>
-        <label>&nbsp;&nbsp;&nbsp;12<br /><u>x 5</u><br /><input id="q68" /></label>
-        <label>&nbsp;&nbsp;&nbsp;5<br /><u>x 5</u><br /><input id="q69" /></label>
-        <label>&nbsp;&nbsp;&nbsp;7<br /><u>x 5</u><br /><input id="q70" /></label>
-    </div><br />
+        <div class="row">
+            <div class="mx-auto">
+                <label>&emsp;&nbsp;11<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb71, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;6<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb72, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;3<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb73, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;12<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb74, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;4<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb75, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;11<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb76, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;5<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb77, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;1<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb78, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;10<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb79, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;2<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb80, new { style = "width: 40px;", autocomplete = "off" })</label>
+            </div>
+        </div>
 
-    <div class="row">
-        <label>&nbsp;&nbsp;&nbsp;11<br /><u>x 5</u><br /><input id="q71" /></label>
-        <label>&nbsp;&nbsp;&nbsp;6<br /><u>x 5</u><br /><input id="q72" /></label>
-        <label>&nbsp;&nbsp;&nbsp;3<br /><u>x 5</u><br /><input id="q73" /></label>
-        <label>&nbsp;&nbsp;&nbsp;12<br /><u>x 5</u><br /><input id="q74" /></label>
-        <label>&nbsp;&nbsp;&nbsp;4<br /><u>x 5</u><br /><input id="q75" /></label>
-        <label>&nbsp;&nbsp;&nbsp;11<br /><u>x 5</u><br /><input id="q76" /></label>
-        <label>&nbsp;&nbsp;&nbsp;5<br /><u>x 5</u><br /><input id="q77" /></label>
-        <label>&nbsp;&nbsp;&nbsp;1<br /><u>x 5</u><br /><input id="q78" /></label>
-        <label>&nbsp;&nbsp;&nbsp;10<br /><u>x 5</u><br /><input id="q79" /></label>
-        <label>&nbsp;&nbsp;&nbsp;2<br /><u>x 5</u><br /><input id="q80" /></label>
-    </div><br />
+        <div class="row">
+            <div class="mx-auto">
+                <label>&emsp;&nbsp;&nbsp;&nbsp;9<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb81, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;8<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb82, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;6<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb83, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;7<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb84, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;1<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb85, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;6<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb86, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;5<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb87, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;10<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb88, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;3<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb89, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;2<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb90, new { style = "width: 40px;", autocomplete = "off" })</label>
+            </div>
+        </div>
 
-    <div class="row">
-        <label>&nbsp;&nbsp;&nbsp;9<br /><u>x 5</u><br /><input id="q81" /></label>
-        <label>&nbsp;&nbsp;&nbsp;8<br /><u>x 5</u><br /><input id="q82" /></label>
-        <label>&nbsp;&nbsp;&nbsp;6<br /><u>x 5</u><br /><input id="q83" /></label>
-        <label>&nbsp;&nbsp;&nbsp;7<br /><u>x 5</u><br /><input id="q84" /></label>
-        <label>&nbsp;&nbsp;&nbsp;1<br /><u>x 5</u><br /><input id="q85" /></label>
-        <label>&nbsp;&nbsp;&nbsp;6<br /><u>x 5</u><br /><input id="q86" /></label>
-        <label>&nbsp;&nbsp;&nbsp;5<br /><u>x 5</u><br /><input id="q87" /></label>
-        <label>&nbsp;&nbsp;&nbsp;10<br /><u>x 5</u><br /><input id="q88" /></label>
-        <label>&nbsp;&nbsp;&nbsp;3<br /><u>x 5</u><br /><input id="q89" /></label>
-        <label>&nbsp;&nbsp;&nbsp;2<br /><u>x 5</u><br /><input id="q90" /></label>
-    </div><br />
-
-    <div class="row">
-        <label>&nbsp;&nbsp;&nbsp;11<br /><u>x 5</u><br /><input id="q91" /></label>
-        <label>&nbsp;&nbsp;&nbsp;4<br /><u>x 5</u><br /><input id="q92" /></label>
-        <label>&nbsp;&nbsp;&nbsp;12<br /><u>x 5</u><br /><input id="q93" /></label>
-        <label>&nbsp;&nbsp;&nbsp;7<br /><u>x 5</u><br /><input id="q94" /></label>
-        <label>&nbsp;&nbsp;&nbsp;8<br /><u>x 5</u><br /><input id="q95" /></label>
-        <label>&nbsp;&nbsp;&nbsp;9<br /><u>x 5</u><br /><input id="q96" /></label>
-        <label>&nbsp;&nbsp;&nbsp;10<br /><u>x 5</u><br /><input id="q97" /></label>
-        <label>&nbsp;&nbsp;&nbsp;9<br /><u>x 5</u><br /><input id="q98" /></label>
-        <label>&nbsp;&nbsp;&nbsp;8<br /><u>x 5</u><br /><input id="q99" /></label>
-        <label>&nbsp;&nbsp;&nbsp;7<br /><u>x 5</u><br /><input id="q100" /></label>
-    </div><br />
-
-</div>
-
-
-
+        <div class="row">
+            <div class="mx-auto">
+                <label>&emsp;&nbsp;11<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb91, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;4<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb92, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;12<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb93, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;7<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb94, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;8<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb95, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;9<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb96, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;10<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb97, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;9<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb98, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;8<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb99, new { style = "width: 40px;", autocomplete = "off" })</label>&emsp;&emsp;
+                <label>&emsp;&nbsp;&nbsp;&nbsp;7<br /><u>&emsp;x 2</u><br />@Html.TextBoxFor(responses => responses.Tb100, new { style = "width: 40px;", autocomplete = "off" })</label>
+            </div>
+        </div>
+        <div class="col-md-2 offset-5">
+            <input class="btn-primary" type="submit" value="Submit" />
+        </div>
+    </div>
+</form>
