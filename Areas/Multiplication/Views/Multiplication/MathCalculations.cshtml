@@ -4,27 +4,14 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@model Mathletes2020.Areas.Multiplication.Models.Times2Responses
+@model Mathletes2020.Areas.Multiplication.Models.Responses
 
-@{
-    var answers = ViewData["answers"] as Mathletes2020.Areas.Multiplication.Models.Answers;
-    var i = 0;
-}
 
 <h1>MathCalculations</h1>
 
-<label>@Model.Tb1</label>
-<label>@Model.Tb11</label>
-<label>Score: @i</label>
-
-<h3> Ans1: @answers.Ans1</h3>
-<h3> Ans2: @answers.Ans2</h3>
+<label for="TotalScore">Total Score: @Model.TotalScore </label>
 
 
-@if (Model.Tb1 == @answers.Ans1) { i = i + 1; }
-@if (Model.Tb2 == @answers.Ans2) { i = i + 1; }
-@if (Model.Tb3 == @answers.Ans3) { i = i + 1; }
-@if (Model.Tb4 == @answers.Ans4) { i = i + 1; }
-@if (Model.Tb5 == @answers.Ans5) { i = i + 1; }
-@if (Model.Tb6 == @answers.Ans6) { i = i + 1; }
-@if (Model.Tb7 == @answers.Ans7) { i = i + 1; }
+
+
+

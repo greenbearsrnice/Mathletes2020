@@ -7,21 +7,23 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient.DataClassification;
 
+
+
 namespace Mathletes2020.Areas.Multiplication.Controllers
 {
     public partial class MultiplicationController : Controller
     {
-        private readonly IAnswersRepository _answers;
 
-        public MultiplicationController(IAnswersRepository answers)
+        //private readonly IAnswersRepository _answers;
+
+        //public MultiplicationController(IAnswersRepository answers)
+        //{
+        //    _answers = answers;
+        //}
+        public ActionResult MathCalculations(Times2Responses responses)
         {
-            _answers = answers;
-        }
-        public ActionResult MathCalculations()
-        {      
-            var model = _answers.GetAnswers(2);
-            ViewData["Answers"] = model;
-            return View();
+            
+            return View(responses);
         }
     }
 }

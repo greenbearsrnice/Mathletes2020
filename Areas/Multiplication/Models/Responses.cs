@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Mathletes2020.Areas.Multiplication.Models
 {
-    public class Times2Responses 
+    public class Responses
     {
 		public int Tb1 { get; set; }
 		public int Tb2 { get; set; }
@@ -107,7 +107,6 @@ namespace Mathletes2020.Areas.Multiplication.Models
 		public int Tb98 { get; set; }
 		public int Tb99 { get; set; }
 		public int Tb100 { get; set; }
-		public int TestLevel { get; set; }
-
+		public int TotalScore { get; set; }
 	}
 }
