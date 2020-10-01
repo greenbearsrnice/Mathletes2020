@@ -16,5 +16,7 @@ namespace Mathletes2020.Models
         }
 
         public DbSet<Answers> Answers { get; set; }
+        public DbSet<StudentStats> StudentStats { get; set; }
+        
     }
 }
